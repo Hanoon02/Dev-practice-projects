@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />   
+        <title>Library</title>
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>Welcome to Library</h2>
+        </div>
+        <div id="forms">
+            <form class="add-book" id="bookForm">
+                <h4>Enter the details below</h4>
+                <input
+                    class="input"
+                    type="text"
+                    id="title"
+                    placeholder="Title"
+                    maxlength="50"
+                    required/>
+                <input
+                    class="input"
+                    type="text"
+                    id="author"
+                    placeholder="Author"
+                    maxlength="50"
+                    required/>
+                <input
+                    class="input"
+                    type="text"
+                    id="pages"
+                    placeholder="Pages"
+                    maxlength="1000"
+                    required/>
+            </form>
+        </div>
+        <div id="form-buttons">
+            <button id="addBook">Add</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="print-books">
+            <button class="print-btn" id="print">Print Books</button>
+        </div>
+    </body>
+</html>

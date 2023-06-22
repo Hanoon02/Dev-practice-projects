@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 class="main-title">Visit India</h1>
+    </div>
+    </div>
+    <div class="body">
+        <div class="slideshow-container" style="padding-top: 20px;">
+            <div class="mySlides fade">
+              <img src="./images/intro.jpeg" style="width:1000px; height:600px; border-radius: 0.75rem;">
+            </div>
+            <div class="mySlides fade"> 
+              <img src="./images/intro2.webp" style="width:1000px; height:600px; border-radius: 0.75rem;">
+            </div>
+            <div class="mySlides fade">
+              <img src="./images/intro3.jpeg" style="width:1000px; height:600px; border-radius: 0.75rem;">
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/intro4.jpeg" style="width:1000px; height:600px; border-radius: 0.75rem;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center; padding-bottom:20px">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        <div class="description">
+            <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. 
+            With a rich heritage and myriad attractions, the country is among the most popular tourist destinations in the world. 
+            It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. 
+            As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, 
+            which give the country a distinct geographical entity.</p>
+        </div>
+        <div class="main-one">
+            <h2 style="  
+            margin: 0 0 0.5em;
+            font-weight: 400;
+            font-size: 3rem;
+            color: rgb(57, 240, 142);
+            line-height: 0.5;
+            margin:0;
+            padding-top: 2rem;
+            padding-bottom: 2rem;">
+            Must Visit Destinations</h2>
+            <h4 style="  
+            margin: 0 0 0.5em;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 2rem;
+            color: rgb(0, 0, 0);
+            line-height: 0.25;
+            margin:0;
+            padding-top: 1rem;
+            padding-bottom: 2rem;">
+          From historical cities to natural splendours, come see the best of India</h4>
+            <div class="places">
+                <div class="img-places">
+                    <img src="images/munnar.jpeg" alt="Munnar">
+                    <img src="images/ooty.jpeg" alt="Ooty">
+                    <img src="images/shillong.jpeg" alt="Shillong">
+                    <img src="images/kavaratti.jpeg" alt="Kavaratti">
+                </div>
+                <div class="plc-names">
+                    <h4 class="place-name">Munnar</h4>
+                    <h4 class="place-name">Ooty</h4>
+                    <h4 class="place-name">Shillong</h4>
+                    <h4 class="place-name">Kavaratti</h4>
+                </div>
+            </div>
+        </div>
+        <div class="main-two">
+            <h2 style="  
+            margin: 0 0 0.5em;
+            font-weight: 400;
+            font-size: 3rem;
+            color: rgb(227, 5, 5);
+            line-height: 0.5;
+            margin:0;
+            padding-bottom: 2rem;"">Explore</h2>
+            <div class="inputBox">
+              <input type="text" required="required">
+              <span>Search a place</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="padding-bottom: 25px;">
+      <p style="font-size: 1.4rem; font-weight:400; font-style:italic; margin: 0 0 0.5em;">About Us</p>
+      <p style="padding-left: 200px; font-size: 1.4rem; font-weight:400; font-style:italic; margin: 0 0 0.5em;">Contact Us</p>
+      <p style="padding-left: 200px; font-size: 1.4rem; font-weight:400; font-style:italic; margin: 0 0 0.5em;">Contribute</p>
+      <p style="padding-left: 200px; font-size: 1.4rem; font-weight:400; font-style:italic; margin: 0 0 0.5em;">Privacy Policy</p>
+    </div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>

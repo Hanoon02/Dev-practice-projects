@@ -1,0 +1,24 @@
+.cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-board{
+    display: flex;
+    flex-direction: row;
+}
+.game-board>*{
+    padding: 10px;
+    width: 800px;
+}

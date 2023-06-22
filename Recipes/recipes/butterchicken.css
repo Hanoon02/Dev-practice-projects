@@ -1,0 +1,26 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 34, 0);     
+}
+
+#title {
+    background-color: rgb(238, 233, 227);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+#steps {
+    color: rgb(4, 69, 31);
+    left: 0px;
+    right: 0px;
+}

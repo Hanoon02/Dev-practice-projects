@@ -1,0 +1,217 @@
+.header{
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.center {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 400px;
+
+  }
+
+.description{
+    display: inline-flex;
+    align-items: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #5a5a5a; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+.main-one{
+    text-align: center;
+    padding: 80px;
+}   
+
+.img-places >*{
+    height: 200px;
+    transition: 0.2s;
+    padding-left: 5px;
+}
+.img-places >*:hover {transform: scale(1.05)}    
+
+.plc-names >*{
+    display: inline-block;
+    text-align: center;
+    padding-left: 110px;
+    padding-right: 120px;
+    margin: 0 0 0.5em;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    line-height: 0.5;
+    margin:0;
+    padding-top: 2rem;
+}
+
+.main-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.inputBox{
+  position: relative;
+  width: 500px;
+}
+
+.inputBox input{
+  width:100%;
+  height: 60px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 1px solid rgba(4, 3, 3, 0.25);
+  background:#aadeea;
+  border-radius: 1.5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+}
+
+.inputBox span{
+  position: absolute;
+  left:0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:hover ~ span
+,.inputBox input:focus ~ span{
+  color:rgb(0, 25, 254);
+  transform: translateX(10px) translateY(5px);
+  font-size: 0.8em;
+  padding: 0.1px;
+}
+
+.inputBox input:hover,
+.inputBox input:valid
+{
+  border: 1.5px solid rgb(52, 99, 255);
+}
+
+/* .btn{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #d7f1d1;
+    transition: background-color 0.2s ease-out 0.1s;
+}
+
+.btn:hover {
+    background-color: rgb(171, 245, 114);
+} */
+
+.main-title{
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  color: coral;
+  line-height: 0.5;
+  margin:0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body{
+  background-image: linear-gradient(to top,#ffffff, #cdedf1);
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 10rem;
+}
+/*------------------------------------*/
+/* Slideshow Codes */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*------------------------------------*/
+
