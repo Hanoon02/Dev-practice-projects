@@ -1,3 +1,4 @@
 # Calculator
 
-## A Simple Calculator Made Using HTML, CSS and JS
+A Simple Calculator made using HTML, CSS and JS
+Part of the <a href="https://www.theodinproject.com">The Odin Project</a> curriculum.
