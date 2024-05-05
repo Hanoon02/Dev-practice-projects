@@ -1,3 +1,3 @@
-# Personal Projects
+# Practice Projects
 
-Collection of all my personal projects mostly done for learning
+Collection of projects mostly done for learning
